@@ -109,26 +109,30 @@
             margin-top: 40px;
             font-size: 30px;
         }
-        /* Phần video */
-        .image-section {
-            flex: 1;
-            max-width: 600px;
-            padding: 20px;
-            display: flex;
-        }
+/* Phần video */
+.image-section {
+    width: 100%;
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .styled-video {
-            width: 100%;
-            border-radius: 20px; /* Bo góc */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng */
-            border: 5px solid #ffffff; /* Viền trắng */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
-        }
+.styled-video {
+    width: 100%; /* Video chiếm 80% chiều rộng */
+    aspect-ratio: 16 / 9; /* Đảm bảo tỷ lệ 16:9 */
+    border-radius: 20px; /* Bo góc */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    border: 5px solid #ffffff; /* Viền trắng */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+}
 
-        .styled-video:hover {
-            transform: scale(1.05); /* Phóng to nhẹ khi hover */
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng mạnh hơn khi hover */
-        }
+.styled-video:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng mạnh hơn khi hover */
+}
 
         /* Phần nội dung text */
         .text-section {
