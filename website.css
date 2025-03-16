@@ -188,7 +188,7 @@
         .container4 {
             width: 80%;
             max-width: 1200px; /* Đảm bảo không quá rộng */
-            padding: 40px;
+            padding: 70px;
             background-color: #f0f0f0;
             color: rgb(0, 0, 0);
             text-align: center;
@@ -207,6 +207,7 @@
             align-items: center;
             padding: 20px 0;
             border-bottom: 1px solid #ffffff;
+            margin-top: 50dp;
         }
         .experience-item:last-child {
             border-bottom: none;
@@ -218,6 +219,7 @@
         }
         .details {
             flex-grow: 1;
+            text-align: left;
         }
         .details h2 {
             font-size: 24px;
@@ -226,7 +228,8 @@
         }
         .details p {
             font-size: 18px;
-            margin: 5px 0 0 0;
+            margin: 15px 0 0 0;
+        
         }
         .date {
             font-size: 18px;
