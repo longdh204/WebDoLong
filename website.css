@@ -186,57 +186,78 @@
 
 
         .container4 {
-            width: 80%;
-            max-width: 1200px; /* Đảm bảo không quá rộng */
-            padding: 70px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
             background-color: #f0f0f0;
+            border: 1px solid #ffffff; /* Viền cam nổi bật */
             color: rgb(0, 0, 0);
             text-align: center;
-            margin: 0 auto; /* Căn giữa theo chiều ngang */
+            border-radius: 10px;
+
         }
         
-        h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-top: -10px;
-            text-align: center;
+        .container4 h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #000000;
         }
+        
         .experience-item {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px solid #ffffff;
-            margin-top: 50dp;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px 0;
+            border-bottom: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
         }
+        
         .experience-item:last-child {
             border-bottom: none;
         }
+        
         .number {
             font-size: 48px;
-            font-weight: 700;
+            font-weight: bold;
             margin-right: 20px;
+            color: #ff6347;
         }
+        
         .details {
             flex-grow: 1;
             text-align: left;
         }
+        
         .details h2 {
             font-size: 24px;
             font-weight: 700;
             margin: 0;
+            color: #333;
         }
-        .details p {
-            font-size: 18px;
-            margin: 15px 0 0 0;
         
+        .details p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
+        
+        .experience-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .date {
             font-size: 18px;
             font-weight: 400;
         }
         .gradient-background {
-            background: linear-gradient(to bottom, #f0f0f0, #fa5700);
+            background: linear-gradient(to bottom,#fa5700, #ffd69d);
         }
         .experience-item img {
             width: 50px;
@@ -259,16 +280,19 @@
         .container5 {
             padding: 50px 20px;
             text-align: center;
+            background-color: #ff6044;
         }
         .container5 h1 {
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 50px;
+            color: white;
         }
         .container5 p {
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 50px;
+            color: white;
         }
         .contact-info {
             display: flex;
@@ -324,6 +348,200 @@
             font-size: 18px;
             vertical-align: middle;
         }
+
+/* Phần trưng bày video */
+.container-video {
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ff2600, #ffd470); /* Nền gradient từ sáng đến cam */
+    max-width: 1200px;
+    width: 100%; /* Đảm bảo container chiếm 100% chiều rộng */
+    border: 2px solid #ff6347; /* Viền cam nổi bật */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
+    text-align: center;
+}
+
+.video-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép các phần tử di chuyển xuống hàng nếu không đủ không gian */
+}
+
+.video-item {
+    background-color: #fafafa; /* Nền sáng cho mỗi video */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho video */
+    width: 48%;  /* Mỗi video chiếm 48% chiều rộng của container */
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
+}
+
+.styled-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc video */
+}
+
+.video-item p {
+    color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+}
+.styled-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc video */
+}
+
+.video-item p {
+    color: #ff6f20; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+    bottom: 10px;
+}
+
+/* Video styled */
+.styled-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Phần trưng bày hình ảnh */
+.container-images {
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f0f0, #ff6347); /* Gradient từ sáng đến cam */
+    max-width: 1200px;
+    border: 2px solid #ff6347; /* Viền cam nổi bật */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép các hình ảnh di chuyển xuống hàng nếu không đủ không gian */
+}
+
+.image-item {
+    background-color: #fafafa; /* Nền sáng cho mỗi hình ảnh */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho hình ảnh */
+    width: 48%;  /* Mỗi hình ảnh chiếm 48% chiều rộng của container */
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
+}
+
+.styled-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc hình ảnh */
+}
+
+.image-item p {
+    color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .container4 h1 {
+        font-size: 28px;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+
+    .number {
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .details h2 {
+        font-size: 18px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .experience-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item {
+        width: 100%; /* Trên màn hình nhỏ hơn, mỗi video chiếm full chiều rộng */
+    }
+
+    .container-video {
+        padding: 10px; /* Giảm padding của container trên các thiết bị nhỏ */
+    }
+    .container4 {
+        padding: 20px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .number {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .experience-item img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .image-item {
+        width: 100%; /* Trên màn hình nhỏ hơn, mỗi hình ảnh chiếm full chiều rộng */
+    }
+}
         @media screen and (max-width :1024px) {
             .container5{
                 display: flex;
@@ -356,5 +574,16 @@
             .menu-item:nth-child(4){
                 margin-top: 20px;
             }
+            /* Menu chỉnh sửa cho thiết bị di động */
+@media screen and (max-width: 832px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin-top: 10px;
+    }
+}
         }
         
