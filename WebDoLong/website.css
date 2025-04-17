@@ -1,0 +1,589 @@
+        
+        html {
+            scroll-behavior: smooth;
+        }/* Toàn bộ body */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #ff5e62, #fcb045); /* Gradient nền */
+            color: #000;
+            
+        }
+
+        /* Container tổng */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Phần header */
+        .header {
+            font-size: 1.5em;
+            margin-top: 70px;
+            color: #ffffff;
+            background: #ff6347;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+        }
+
+        /* Phần tiêu đề chính */
+        .title {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Dòng ngang và hình tròn */
+        .line {
+            width: 80%;
+            height: 15px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: -100px; /* Nửa chiều cao của hình tròn */
+            box-shadow: 0 28px 25px rgba(0, 0, 0, 0.2);
+            border: 5px solid #ffffff; /* Viền trắng */
+
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Phần menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        .menu-item {
+            margin: 0 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 10px 20px;
+            background: #ff6347;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item a{
+            text-decoration: none;
+            color: white;
+        }
+        .menu-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Container cho phần video và nội dung */
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container3 h2{
+            color: white;
+            font-weight: bold;
+            margin-top: 40px;
+            font-size: 30px;
+        }
+/* Phần video */
+.image-section {
+    width: 100%;
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-video {
+    width: 100%; /* Video chiếm 80% chiều rộng */
+    aspect-ratio: 16 / 9; /* Đảm bảo tỷ lệ 16:9 */
+    border-radius: 20px; /* Bo góc */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    border: 5px solid #ffffff; /* Viền trắng */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+}
+
+.styled-video:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng mạnh hơn khi hover */
+}
+
+        /* Phần nội dung text */
+        .text-section {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+            background: linear-gradient(to bottom, #ff8800, #b2abdb); /* Gradient nền */
+            border-radius: 20px;
+            border: 5px solid #ffffff; /* Viền trắng */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+            color: white;
+        }
+
+        .text-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+
+        .text-section p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .text-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Hình ảnh tròn */
+            margin-bottom: 5px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container3 {
+                flex-direction: column;
+            }
+
+            .image-section,
+            .text-section {
+                max-width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+        .container4 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ffffff; /* Viền cam nổi bật */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 10px;
+
+        }
+        
+        .container4 h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+        
+        .experience-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px 0;
+            border-bottom: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .number {
+            font-size: 48px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: #ff6347;
+        }
+        
+        .details {
+            flex-grow: 1;
+            text-align: left;
+        }
+        
+        .details h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+        }
+        
+        .details p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #555;
+        }
+        
+        .experience-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .date {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .gradient-background {
+            background: linear-gradient(to bottom,#fa5700, #ffd69d);
+        }
+        .experience-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Hình ảnh tròn */
+            margin-bottom: 5px;
+            box-shadow: 0 20px 26px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .container5 {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ff6044;
+        }
+        .container5 h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: white;
+        }
+        .container5 p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .contact-info div {
+            margin: 0 20px;
+        }
+        .contact-info div p {
+            margin: 5px 0;
+        }
+        .contact-info div p:first-child {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .contact-info div p:last-child {
+            font-size: 18px;
+        }
+        .social-icons {
+            margin: 20px 0;
+            display: flex; /* Để các phần tử con nằm ngang */
+            justify-content: center; /* Căn giữa các biểu tượng */
+        }
+        
+        .social-icons i {
+            font-size: 24px;
+            margin: 0 10px; /* Thêm khoảng cách giữa các biểu tượng */
+        }
+        
+        /* Phần Footer */
+        .footer {
+            background: linear-gradient(to top, #ffcccc, white);
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .footer hr {
+            border: none;
+            border-top: 1px solid black;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .back-to-top {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .back-to-top i {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+/* Phần trưng bày video */
+.container-video {
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ff2600, #ffd470); /* Nền gradient từ sáng đến cam */
+    max-width: 1200px;
+    width: 100%; /* Đảm bảo container chiếm 100% chiều rộng */
+    border: 2px solid #ff6347; /* Viền cam nổi bật */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
+    text-align: center;
+}
+
+.video-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép các phần tử di chuyển xuống hàng nếu không đủ không gian */
+}
+
+.video-item {
+    background-color: #fafafa; /* Nền sáng cho mỗi video */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho video */
+    width: 48%;  /* Mỗi video chiếm 48% chiều rộng của container */
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
+}
+
+.styled-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc video */
+}
+
+.video-item p {
+    color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+}
+.styled-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc video */
+}
+
+.video-item p {
+    color: #ff6f20; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+    bottom: 10px;
+}
+
+/* Video styled */
+.styled-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Phần trưng bày hình ảnh */
+.container-images {
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f0f0, #ff6347); /* Gradient từ sáng đến cam */
+    max-width: 1200px;
+    border: 2px solid #ff6347; /* Viền cam nổi bật */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép các hình ảnh di chuyển xuống hàng nếu không đủ không gian */
+}
+
+.image-item {
+    background-color: #fafafa; /* Nền sáng cho mỗi hình ảnh */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho hình ảnh */
+    width: 48%;  /* Mỗi hình ảnh chiếm 48% chiều rộng của container */
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
+}
+
+.styled-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bo góc hình ảnh */
+}
+
+.image-item p {
+    color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .container4 h1 {
+        font-size: 28px;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+
+    .number {
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .details h2 {
+        font-size: 18px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .experience-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-item {
+        width: 100%; /* Trên màn hình nhỏ hơn, mỗi video chiếm full chiều rộng */
+    }
+
+    .container-video {
+        padding: 10px; /* Giảm padding của container trên các thiết bị nhỏ */
+    }
+    .container4 {
+        padding: 20px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .number {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .details h2 {
+        font-size: 20px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .experience-item img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .image-item {
+        width: 100%; /* Trên màn hình nhỏ hơn, mỗi hình ảnh chiếm full chiều rộng */
+    }
+}
+        @media screen and (max-width :1024px) {
+            .container5{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container3{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width :832px) {
+            .contact-info{
+                display: flex;
+                flex-direction: column;
+            }
+            .menu{
+                display: flex;
+                flex-direction: column;
+            }
+            .menu-item:nth-child(1){
+                margin-top: -45px;
+            }
+            .menu-item:nth-child(2){
+                margin-top: 20px;
+            }
+            .menu-item:nth-child(3){
+                margin-top: 20px;
+            }
+            .menu-item:nth-child(4){
+                margin-top: 20px;
+            }
+            /* Menu chỉnh sửa cho thiết bị di động */
+@media screen and (max-width: 832px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin-top: 10px;
+    }
+}
+        }
+        
