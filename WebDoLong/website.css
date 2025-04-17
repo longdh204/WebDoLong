@@ -430,9 +430,9 @@
 .container-images {
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(to bottom, #f0f0f0, #ff6347); /* Gradient từ sáng đến cam */
+    background: linear-gradient(to bottom,#ff6347, #f0f0f0); /* Gradient từ sáng đến cam */
     max-width: 1200px;
-    border: 2px solid #ff6347; /* Viền cam nổi bật */
+    border: 2px solid #ffffff; /* Viền cam nổi bật */
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
     text-align: center;
@@ -453,13 +453,14 @@
     width: 48%;  /* Mỗi hình ảnh chiếm 48% chiều rộng của container */
     transition: 0.3s;
     margin-bottom: 20px;
+    border: 1px solid rgb(255, 217, 0);
 }
 
 .image-item:hover {
     transform: scale(1.05); /* Phóng to nhẹ khi hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
 }
-
+     
 .styled-image {
     width: 100%;
     height: auto;
@@ -470,6 +471,9 @@
     color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
     font-size: 14px;
     margin-top: 10px;
+    border-radius: 10px; /* Bo góc hình ảnh */
+    
+
 }
 
 @media (max-width: 480px) {
