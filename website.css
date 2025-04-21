@@ -278,136 +278,121 @@
 
 
         .container5 {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
-            background-color: #ff6044;
-        }
-        .container5 h1 {
+            background: linear-gradient(135deg, #ff6044, #ff8266);
+            color: white;
+            border-radius: 20px;
+          }
+          
+          .container5 h1 {
             font-size: 36px;
+            margin-bottom: 40px;
             font-weight: bold;
-            margin-bottom: 50px;
-            color: white;
-        }
-        .container5 p {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 50px;
-            color: white;
-        }
-        .contact-info {
+          }
+          
+          .contact-info {
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
-        }
-        .contact-info div {
-            margin: 0 20px;
-        }
-        .contact-info div p {
-            margin: 5px 0;
-        }
-        .contact-info div p:first-child {
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+          }
+          
+          .contact-info div {
+            text-align: center;
+          }
+          
+          .contact-info i {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: white;
+          }
+          
+          .contact-info .label {
             font-weight: bold;
-            font-size: 14px;
-        }
-        .contact-info div p:last-child {
+            font-size: 16px;
+            margin: 5px 0;
+          }
+          
+          .contact-info .value {
             font-size: 18px;
-        }
-        .social-icons {
-            margin: 20px 0;
-            display: flex; /* Để các phần tử con nằm ngang */
-            justify-content: center; /* Căn giữa các biểu tượng */
-        }
-        
-        .social-icons i {
-            font-size: 24px;
-            margin: 0 10px; /* Thêm khoảng cách giữa các biểu tượng */
-        }
-        
-        /* Phần Footer */
-        .footer {
-            background: linear-gradient(to top, #ffcccc, white);
-            padding: 20px 0;
-            position: relative;
-        }
-        
-        .footer hr {
-            border: none;
-            border-top: 1px solid black;
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        .back-to-top {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            font-size: 14px;
-        }
-        
-        .back-to-top i {
+            margin: 5px 0;
+          }
+          
+          .back-btn {
             font-size: 18px;
-            vertical-align: middle;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-block;
+          }
+          
+          .back-btn:hover {
+            background-color: white;
+            color: #ff6044;
+            transform: scale(1.05);
+          }
+          
+
+          .container-video {
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #ff2600, #ffd470);
+            max-width: 1200px;
+            border: 2px solid #ff6347;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-
-/* Phần trưng bày video */
-.container-video {
-    margin: 50px auto;
-    padding: 20px;
-    background: linear-gradient(to bottom, #ff2600, #ffd470); /* Nền gradient từ sáng đến cam */
-    max-width: 1200px;
-    width: 100%; /* Đảm bảo container chiếm 100% chiều rộng */
-    border: 2px solid #ff6347; /* Viền cam nổi bật */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho phần viền */
-    text-align: center;
-}
-
-.video-gallery {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap; /* Cho phép các phần tử di chuyển xuống hàng nếu không đủ không gian */
-}
-
-.video-item {
-    background-color: #fafafa; /* Nền sáng cho mỗi video */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ cho video */
-    width: 48%;  /* Mỗi video chiếm 48% chiều rộng của container */
-    transition: 0.3s;
-    margin-bottom: 20px;
-}
-
-.video-item:hover {
-    transform: scale(1.05); /* Phóng to nhẹ khi hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi hover */
-}
-
-.styled-video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Bo góc video */
-}
-
-.video-item p {
-    color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
-    font-size: 14px;
-    margin-top: 10px;
-}
-.styled-video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Bo góc video */
-}
-
-.video-item p {
-    color: #ff6f20; /* Màu chữ cam để liên kết với viền và nổi bật */
-    font-size: 14px;
-    margin-top: 10px;
-    bottom: 10px;
-}
-
+        #video-section {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .video-gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .video-item {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            transition: 0.3s;
+            margin-bottom: 20px;
+        }
+        .video-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .styled-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border: 5px solid #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .styled-video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+        .video-item p {
+            color: #ff6f20;
+            font-size: 20px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+        
 /* Video styled */
 .styled-video {
     width: 100%;
