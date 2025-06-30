@@ -456,9 +456,10 @@
 
 .image-item p {
     color: #ff6347; /* Màu chữ cam để liên kết với viền và nổi bật */
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
     border-radius: 10px; /* Bo góc hình ảnh */
+    font-weight: bold;
     
 
 }
